@@ -1,0 +1,16 @@
+{oh}{dirty}{maggie}{mae}{take}	sup=1
+{oh}{dirty}{maggie}{mae}{away}	sup=1
+{oh}{dirty}{maggie}{take}{away}	sup=1
+{oh}{dirty}{maggie}{take}{.}	sup=1
+{oh}{dirty}{mae}{take}{away}	sup=1
+{oh}{dirty}{mae}{take}{.}	sup=1
+{oh}{dirty}{mae}{away}{.}	sup=1
+{oh}{dirty}{mae}{away}{never}	sup=1
+{oh}{maggie}{mae}{take}{away}	sup=1
+{oh}{maggie}{mae}{take}{.}	sup=1
+{oh}{maggie}{mae}{away}{.}	sup=1
+{oh}{maggie}{mae}{away}{never}	sup=1
+{oh}{maggie}{take}{away}{.}	sup=1
+{oh}{maggie}{take}{away}{never}	sup=1
+{oh}{maggie}{take}{.}{never}	sup=1
+{oh}{maggie}{take}{.}{walk}	sup=1
