@@ -17,45 +17,45 @@ o.close()
 m.close()
 
 with codecs.open('fusion/beatles_over_oasis.txt', 'w', 'utf-8') as file_w:
-    tmp = beatles & oasis
+    tmp = [x for x in beatles if x not in oasis]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 with codecs.open('fusion/oasis_over_beatles.txt', 'w', 'utf-8') as file_w:
-    tmp = beatles & oasis
+    tmp = [x for x in oasis if x not in beatles]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 with codecs.open('fusion/beatles_over_metallica.txt', 'w', 'utf-8') as file_w:
-    tmp = beatles & metallica
+    tmp = [x for x in beatles if x not in metallica]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 with codecs.open('fusion/metallica_over_beatles.txt', 'w', 'utf-8') as file_w:
-    tmp = beatles & metallica
+    tmp = [x for x in metallica if x not in beatles]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 with codecs.open('fusion/beatles_over_all.txt', 'w', 'utf-8') as file_w:
-    tmp = beatles & (oasis | metallica)
+    tmp = [x for x in beatles if x not in oasis and x not in metallica]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 
 with codecs.open('fusion/oasis_over_all.txt', 'w', 'utf-8') as file_w:
-    tmp = oasis & (beatles | metallica)
+    tmp = [x for x in oasis if x not in beatles and x not in metallica]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
 with codecs.open('fusion/metallica_over_all.txt', 'w', 'utf-8') as file_w:
-    tmp = metallica & (beatles | oasis)
+    tmp = [x for x in metallica if x not in oasis and x not in beatles]
     for l in tmp:
-        file_w.write(l)
+        file_w.write(l+'\n')
 
 
